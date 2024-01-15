@@ -1,10 +1,5 @@
-import {
-  useQuery,
-  QueryKey,
-  UseQueryOptions,
-  UseQueryResult,
-} from '@tanstack/react-query';
-import useSupabase from './useSupabase';
+import { QueryKey, UseQueryOptions } from '@tanstack/react-query';
+import { TypedSupabaseClient } from './useSupabaseClient';
 
 interface User {
   id: number;
@@ -15,16 +10,15 @@ interface User {
 export const userQueryKey = ['users'];
 
 function useUsersQuery(
+  client: TypedSupabaseClient,
   queryOptions?: UseQueryOptions<User[], Error, User[], QueryKey>
-): UseQueryResult<User[], Error> {
-  const client = useSupabase();
-
+) {
   const queryFn = async (): Promise<User[]> => {
     const users = await client.from('User').select('*').throwOnError();
     return users.data || [];
   };
 
-  return useQuery({ queryKey: userQueryKey, queryFn, ...queryOptions });
+  return { queryKey: userQueryKey, queryFn, ...queryOptions };
 }
 
 export default useUsersQuery;

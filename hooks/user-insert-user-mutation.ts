@@ -1,5 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
-import useSupabase from './useSupabase';
+import useSupabase from './useSupabaseClient';
 
 function useInsertUserMutation() {
   const client = useSupabase();
