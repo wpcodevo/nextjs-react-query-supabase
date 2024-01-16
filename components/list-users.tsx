@@ -1,7 +1,6 @@
 'use client';
 
-import UserForm from '@/components/user-form';
-import useUsersQuery, { userQueryKey } from '@/hooks/use-users-query';
+import useUsersQuery from '@/hooks/use-users-query';
 import useSupabaseClient from '@/hooks/useSupabaseClient';
 import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image';
@@ -12,11 +11,7 @@ export default function ListUsers() {
   const { data } = useQuery(useUsersQuery(client));
 
   return (
-    <main style={{ maxWidth: 1200, marginInline: 'auto', padding: 20 }}>
-      <div className='w-full flex justify-center mb-8'>
-        <UserForm />
-      </div>
-
+    <>
       {
         <div
           style={{
@@ -42,6 +37,6 @@ export default function ListUsers() {
           ))}
         </div>
       }
-    </main>
+    </>
   );
 }

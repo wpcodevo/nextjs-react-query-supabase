@@ -7,6 +7,7 @@ import {
 import { useSupabaseServer } from '@/hooks/useSupabaseServer';
 import { cookies } from 'next/headers';
 import ListUsers from '@/components/list-users';
+import UserForm from '@/components/user-form';
 
 export default async function Hydation() {
   const queryClient = new QueryClient();
@@ -17,7 +18,12 @@ export default async function Hydation() {
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <ListUsers />
+      <main style={{ maxWidth: 1200, marginInline: 'auto', padding: 20 }}>
+        <div className='w-full flex justify-center mb-8'>
+          <UserForm />
+        </div>
+        <ListUsers />
+      </main>
     </HydrationBoundary>
   );
 }
