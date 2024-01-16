@@ -5,13 +5,12 @@ install-dependencies:
 	pnpm add @supabase/supabase-js @tanstack/react-query @supabase/ssr
 	pnpm add -D @tanstack/eslint-plugin-query
 	pnpm add -D @tanstack/react-query-devtools
-
 	pnpm add -D supabase
 
 commands:
 	# https://supabase.com/dashboard/account/tokens
 	pnpm supabase init
-	pnpm supabase link --project-ref <project_reference>
 	pnpm supabase migration new init_user
-	pnpm supabase db reset --db-url "<DB_URL>"
+	pnpm supabase link --project-ref <project_reference>
+	pnpm supabase db reset --db-url ""
 	pnpm supabase gen types typescript --linked --schema=public > utils/database.types.ts
