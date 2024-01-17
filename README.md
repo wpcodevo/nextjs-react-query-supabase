@@ -2,7 +2,7 @@
 
 In this article, you will learn how to use Supabase with React Query in the new Next.js app directory, focusing on both client and server components. Additionally, you will learn how to leverage the Supabase CLI for performing database migrations and seeding data with dummy content for testing.
 
-![Using React Query with Supabase in Next.js App Router](https://codevoweb.com/wp-content/uploads/2024/01/How-to-Set-Up-and-Use-React-Query-in-Next.js-14.webp)
+![Using React Query with Supabase in Next.js App Router](https://codevoweb.com/wp-content/uploads/2024/01/Using-React-Query-with-Supabase-in-Next.js-App-Router.webp)
 
 ### Topics Covered
 
