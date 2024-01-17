@@ -26,4 +26,4 @@ In this article, you will learn how to use Supabase with React Query in the new 
 - Conclusion
 
 
-Read the entire article here: [https://codevoweb.com/using-react-query-with-supabase-in-nextjs-app-router/](https://codevoweb.com/using-react-query-with-supabase-in-nextjs-app-router/)
+Read the entire article here: [https://codevoweb.com/using-react-query-with-supabase-in-next-js-app-router/](https://codevoweb.com/using-react-query-with-supabase-in-next-js-app-router/)
