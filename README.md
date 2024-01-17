@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Using React Query with Supabase in Next.js App Router
 
-## Getting Started
+In this article, you will learn how to use Supabase with React Query in the new Next.js app directory, focusing on both client and server components. Additionally, you will learn how to leverage the Supabase CLI for performing database migrations and seeding data with dummy content for testing.
 
-First, run the development server:
+![Using React Query with Supabase in Next.js App Router](https://codevoweb.com/wp-content/uploads/2024/01/How-to-Set-Up-and-Use-React-Query-in-Next.js-14.webp)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Topics Covered
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Bootstrap the Next.js 14+ Project
+- Install the Necessary Dependencies
+- Create a Project on Supabase
+- Setup Supabase in the Next.js App Router
+  - Initialize and Perform Migrations with the Supabase CLI
+  - Generate the Database Types with the Supabase CLI
+- Set Up React Query in the Next.js App Router
+- Create the Supabase Client
+- Create a Hook to Fetch Data
+- Create a Hook to Mutate Data
+- Using Supabase and React Query on the Client
+  - Fetching Data in a Client Component
+  - Mutating Data in a Client Component
+  - Render the Components in a Page File
+- Using Supabase and React Query on the Server
+  - Create the Supabase Server Client
+  - Prefetch Data on the Server
+- Conclusion
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Read the entire article here: [https://codevoweb.com/using-react-query-with-supabase-in-nextjs-app-router/](https://codevoweb.com/using-react-query-with-supabase-in-nextjs-app-router/)
